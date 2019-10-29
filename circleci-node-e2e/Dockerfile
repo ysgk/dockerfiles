@@ -1,5 +1,7 @@
 FROM circleci/node:12-browsers
 
+RUN apt-get update
+
 # aws-cli をインストール
 RUN apt-get install -y \
         python3-dev \
