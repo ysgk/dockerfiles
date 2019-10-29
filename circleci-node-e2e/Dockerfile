@@ -1,9 +1,8 @@
 FROM circleci/node:12-browsers
 
-RUN apt-get update
-
+RUN sudo apt-get update
+RUN sudo apt-get install -y \
 # aws-cli をインストール
-RUN apt-get install -y \
         python3-dev \
         python3-setuptools \
         python3-pip
